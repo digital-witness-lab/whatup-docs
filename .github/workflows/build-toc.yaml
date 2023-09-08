@@ -9,8 +9,9 @@ jobs:
       - run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/0.8.0/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
-          find . -name \*.md -exec ./gh-md-toc --insert --no-backup --hide-footer {} \;
+          find . -name \*.md -exec ./gh-md-toc --insert --skip-header --no-backup --hide-footer {} \;
+          ./gh-md-toc --hide-footer *.md > README.md
           rm gh-md-toc
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Auto update markdown TOC
+          commit_message: Update Table of Contents
