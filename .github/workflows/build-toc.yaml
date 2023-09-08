@@ -10,7 +10,7 @@ jobs:
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/0.8.0/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
           find . -name \*.md -exec ./gh-md-toc --insert --skip-header --no-backup --hide-footer {} \;
-          find . -name \*.md -not -name README.md | xargs ./gh-md-toc --no-backup | grep -E "^\s*\*" > README.md
+          ./gen-readme.sh
           rm gh-md-toc
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
