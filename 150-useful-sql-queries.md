@@ -1,0 +1,34 @@
+# Useful SQL Queries
+
+## Selecting 1000 Messages
+
+```sql
+SELECT * FROM `whatup-395208.messages.messages` LIMIT 1000
+```
+
+## Joining Messages and Group Info
+
+```sql
+SELECT
+    m.*,
+    gi.*
+FROM `whatup-395208.messages.messages` AS m
+LEFT JOIN `whatup-395208.messages.group_info` AS gi
+    ON m.chat_jid = gi.id
+LIMIT 1000
+```
+
+
+## Filtering Messages by Keywords in Second Table
+
+This query will use the "fear-speech-emoji" static data table as a set of keywords and return messages that contain at least one keyword.
+
+```sql
+SELECT
+  fear_emoji.*,
+  message.*
+FROM `whatup-395208.messages.messages` AS message
+JOIN `whatup-395208.static_data.fear-speech-emoji` AS fear_emoji
+ON message.text LIKE CONCAT('%', fear_emoji.emoji, '%') 
+LIMIT 10
+```
