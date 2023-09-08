@@ -100,6 +100,43 @@ Follow the steps above in the ["WebUI with BigQuery"](#webui-with-bigquery) sect
 You now have a sheet in your google sheet that has a view into the database. The sheet doesn't automatically refresh as the database changes. In order to do this, you need to click "Reresh options" and click "Refresh all" or set up a refresh schedule.
 
 
+### Python
+
+First request a service account that has access to view data. You will get a JSON file with the login credentials for this account. Please keep this file safe and do not publish it to a git repo or share it with other users!
+
+Now use the [`google-cloud-bigquery`](https://cloud.google.com/python/docs/reference/bigquery/latest) package to access data
+
+```python
+from google.cloud import bigquery
+
+# Replace these variables with your own values
+project_id = 'whatup-395208'
+private_key_path = 'path/to/your/keyfile.json'
+dataset_id = 'messages'
+table_id = 'group_info'
+
+# Initialize the BigQuery client with your credentials
+client = bigquery.Client.from_service_account_json(private_key_path, project=project_id)
+
+# Define the BigQuery SQL query
+sql_query = f"SELECT * FROM `{project_id}.{dataset_id}.{table_id}`"
+
+# Run the query and get a query job
+query_job = client.query(sql_query)
+
+# Process and stream the results
+for row in query_job:
+    # Here, you can process each row as needed
+    print(row)
+```
+
+Alternatively, if you want the results as a pandas DataFrame, replace the final for loop with,
+
+```python
+df = query_job.to_dataframe()
+```
+
+
 ## Ways of accessing third party data in BigQuery
 
 There are several ways to access third party data in BigQuery. In general, BigQuery is very adaptive and you should feel free to make new tables with temporary data that you would like to join to existing data. These tables can contain analysis results, custom filtering or search terms that you want to regularly refer to.
