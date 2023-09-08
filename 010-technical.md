@@ -4,19 +4,22 @@
 
 
 <!--ts-->
-* [WHATUP TECHNICAL DOCS](#whatup-technical-docs)
-   * [What this doc is and what it isn't](#what-this-doc-is-and-what-it-isnt)
-   * [Repo Contents](#repo-contents)
-      * [Architecture Philosophy](#architecture-philosophy)
-      * [File tree overview](#file-tree-overview)
-      * [How Services Connect](#how-services-connect)
-   * [Setup](#setup)
-      * [Local Development Environment](#local-development-environment)
-         * [Decrypting](#decrypting)
-         * [Core Services](#core-services)
-         * [On-Boarding a device](#on-boarding-a-device)
-         * [Launching Bots](#launching-bots)
-         * [Celebrate 🎊](#celebrate-)
+* [WHATUP TECHNICAL DOCS](./010-technical.md#whatup-technical-docs)
+   * [What this doc is and what it isn't](./010-technical.md#what-this-doc-is-and-what-it-isnt)
+   * [Repo Contents](./010-technical.md#repo-contents)
+      * [Architecture Philosophy](./010-technical.md#architecture-philosophy)
+      * [File tree overview](./010-technical.md#file-tree-overview)
+      * [How Services Connect](./010-technical.md#how-services-connect)
+   * [Setup](./010-technical.md#setup)
+      * [Local Development Environment](./010-technical.md#local-development-environment)
+         * [Decrypting](./010-technical.md#decrypting)
+         * [Core Services](./010-technical.md#core-services)
+         * [On-Boarding a device](./010-technical.md#on-boarding-a-device)
+         * [Launching Bots](./010-technical.md#launching-bots)
+         * [Celebrate 🎊](./010-technical.md#celebrate-)
+
+<!-- Added by: runner, at: Fri Sep  8 10:46:04 UTC 2023 -->
+
 <!--te-->
 
 
