@@ -1,9 +1,10 @@
 on:
   push:
     paths: ['**.md']
-
+name: TOC Generate
 jobs:
   build:
+    name: Generate
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
