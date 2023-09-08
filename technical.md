@@ -4,6 +4,19 @@
 
 
 <!--ts-->
+* [WHATUP TECHNICAL DOCS](#whatup-technical-docs)
+   * [What this doc is and what it isn't](#what-this-doc-is-and-what-it-isnt)
+   * [Repo Contents](#repo-contents)
+      * [Architecture Philosophy](#architecture-philosophy)
+      * [File tree overview](#file-tree-overview)
+      * [How Services Connect](#how-services-connect)
+   * [Setup](#setup)
+      * [Local Development Environment](#local-development-environment)
+         * [Decrypting](#decrypting)
+         * [Core Services](#core-services)
+         * [On-Boarding a device](#on-boarding-a-device)
+         * [Launching Bots](#launching-bots)
+         * [Celebrate 🎊](#celebrate-)
 <!--te-->
 
 
