@@ -156,7 +156,7 @@ There is also a method to use Google sheets as a data-source that is accessible 
 7. Give the new table an informative name in the "Table" field. Ideally, this will also be the same name as the Google Sheet
 8. Click Create Table
 
-You should now see the new table in the "static_data" dataset! An example of joining to this data can be seen [here](#filtering-messages-by-keywords-in-second-table)
+You should now see the new table in the "static_data" dataset! An example of joining to this data can be seen [here](150-useful-sql-queries.md#filtering-messages-by-keywords-in-second-table)
 
 ![](images/webui-add-data-source.png)
 
