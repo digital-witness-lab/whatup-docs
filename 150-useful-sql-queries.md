@@ -32,3 +32,15 @@ JOIN `whatup-395208.static_data.fear-speech-emoji` AS fear_emoji
 ON message.text LIKE CONCAT('%', fear_emoji.emoji, '%') 
 LIMIT 10
 ```
+
+## Extract URLs from messages
+
+This query will extract URLs from text in the messages table
+
+```sql
+SELEC
+    link,
+    REGEXP_EXTRACT_ALL(text, r"(http[^\s]+)") AS extracted_links
+FROM
+    `whatup-395208.messages.messages`
+```
