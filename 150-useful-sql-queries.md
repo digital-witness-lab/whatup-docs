@@ -44,3 +44,14 @@ SELEC
 FROM
     `whatup-395208.messages.messages`
 ```
+
+## More interesting message
+
+As of Oct 25, 2023, the following query will show data from less-spammy sources. In the future, this may not be true and may actually reduce the number of non-spam messages you see.
+
+```sql
+SELECT *
+FROM `whatup-395208.messages.messages` 
+WHERE
+  reciever_jid = "anon.8XQhD3Ge7Pw_z27v1xOYZ0-94dOUHbejSW_8w3Bud-Y.v001@s.whatsapp.net"
+```
