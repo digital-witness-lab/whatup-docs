@@ -55,3 +55,19 @@ FROM `whatup-395208.messages.messages`
 WHERE
   reciever_jid = "anon.8XQhD3Ge7Pw_z27v1xOYZ0-94dOUHbejSW_8w3Bud-Y.v001@s.whatsapp.net"
 ```
+
+## Groups contributed by user
+
+The following is a postgres query that can be adapted for bigquery.
+
+```sql
+select distinct
+	gi."groupName_name" 
+from messages as m
+join group_info gi 
+	on m.chat_jid = gi."JID" 
+inner join registered_users ru 
+	on (m.reciever_jid = ru.jid_anon or m.sender_jid = ru.jid_anon)
+where 
+	ru.username = 'MP12-a'
+```
