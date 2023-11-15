@@ -32,3 +32,4 @@
    * [Filtering Messages by Keywords in Second Table](./150-useful-sql-queries.md#filtering-messages-by-keywords-in-second-table)
    * [Extract URLs from messages](./150-useful-sql-queries.md#extract-urls-from-messages)
    * [More interesting message](./150-useful-sql-queries.md#more-interesting-message)
+   * [Groups contributed by user](./150-useful-sql-queries.md#groups-contributed-by-user)
