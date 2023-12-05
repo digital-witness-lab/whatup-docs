@@ -1,5 +1,20 @@
 # Useful SQL Queries
 
+<!--ts-->
+* [Useful SQL Queries](./150-useful-sql-queries.md#useful-sql-queries)
+   * [Selecting 1000 Messages](./150-useful-sql-queries.md#selecting-1000-messages)
+   * [Joining Messages and Group Info](./150-useful-sql-queries.md#joining-messages-and-group-info)
+   * [Filtering Messages by Keywords in Second Table](./150-useful-sql-queries.md#filtering-messages-by-keywords-in-second-table)
+   * [Extract URLs from messages](./150-useful-sql-queries.md#extract-urls-from-messages)
+   * [More interesting message](./150-useful-sql-queries.md#more-interesting-message)
+   * [Groups contributed by user](./150-useful-sql-queries.md#groups-contributed-by-user)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: micha, at: Tue Dec  5 11:34:27 AM CET 2023 -->
+
+<!--te-->
+
+
 ## Selecting 1000 Messages
 
 ```sql

@@ -4,22 +4,22 @@
 
 
 <!--ts-->
-* [](./010-technical.md#whatup-technical-docs)
-   * [](./010-technical.md#what-this-doc-is-and-what-it-isnt)
-   * [](./010-technical.md#repo-contents)
-      * [](./010-technical.md#architecture-philosophy)
-      * [](./010-technical.md#file-tree-overview)
-      * [](./010-technical.md#how-services-connect)
-   * [](./010-technical.md#setup)
-      * [](./010-technical.md#local-development-environment)
-         * [](./010-technical.md#decrypting)
-         * [](./010-technical.md#core-services)
-         * [](./010-technical.md#on-boarding-a-device)
-         * [](./010-technical.md#launching-bots)
-         * [](./010-technical.md#celebrate-)
+* [WHATUP TECHNICAL DOCS](./010-technical.md#whatup-technical-docs)
+   * [What this doc is and what it isn't](./010-technical.md#what-this-doc-is-and-what-it-isnt)
+   * [Repo Contents](./010-technical.md#repo-contents)
+      * [Architecture Philosophy](./010-technical.md#architecture-philosophy)
+      * [File tree overview](./010-technical.md#file-tree-overview)
+      * [How Services Connect](./010-technical.md#how-services-connect)
+   * [Setup](./010-technical.md#setup)
+      * [Local Development Environment](./010-technical.md#local-development-environment)
+         * [Decrypting](./010-technical.md#decrypting)
+         * [Core Services](./010-technical.md#core-services)
+         * [On-Boarding a device](./010-technical.md#on-boarding-a-device)
+         * [Launching Bots](./010-technical.md#launching-bots)
+         * [Celebrate 🎊](./010-technical.md#celebrate-)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Wed Nov 29 14:03:19 UTC 2023 -->
+<!-- Added by: micha, at: Tue Dec  5 11:34:26 AM CET 2023 -->
 
 <!--te-->
 

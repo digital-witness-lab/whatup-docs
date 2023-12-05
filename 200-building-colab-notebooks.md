@@ -2,6 +2,26 @@
 
 The easiest way to prototype analyses and interfaces with Whatup data is via Google Colab notebooks.
 
+<!--ts-->
+* [Building Colab Notebooks](./200-building-colab-notebooks.md#building-colab-notebooks)
+   * [Why Google Colab](./200-building-colab-notebooks.md#why-google-colab)
+   * [Limitations](./200-building-colab-notebooks.md#limitations)
+   * [Creating a new Colab notebook](./200-building-colab-notebooks.md#creating-a-new-colab-notebook)
+   * [Sharing notebooks in playground mode](./200-building-colab-notebooks.md#sharing-notebooks-in-playground-mode)
+   * [Code snippets and guidance](./200-building-colab-notebooks.md#code-snippets-and-guidance)
+      * [Fetching data from BigQuery](./200-building-colab-notebooks.md#fetching-data-from-bigquery)
+      * [Fetching data from Google Sheets](./200-building-colab-notebooks.md#fetching-data-from-google-sheets)
+      * [Accepting user input via widgets](./200-building-colab-notebooks.md#accepting-user-input-via-widgets)
+      * [Displaying interactive tables](./200-building-colab-notebooks.md#displaying-interactive-tables)
+      * [Displaying charts](./200-building-colab-notebooks.md#displaying-charts)
+      * [Allowing users to download data](./200-building-colab-notebooks.md#allowing-users-to-download-data)
+      * [Allowing users to copy text to the clipboard](./200-building-colab-notebooks.md#allowing-users-to-copy-text-to-the-clipboard)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: micha, at: Tue Dec  5 11:34:28 AM CET 2023 -->
+
+<!--te-->
+
 ## Why Google Colab
 
 Google Colab notebooks are *pretty much* the same as [Jupyter notebooks](https://jupyter.org/), but with some collaborative and Google-integrating features. So they're a familiar programming paradigm for most technical people on the WhatsApp Watch team.
