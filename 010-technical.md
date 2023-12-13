@@ -57,7 +57,6 @@ Finally, we try to keep the actual WhatsApp login credentials quite safe. For th
 │   ├── message-archive   # local archive of messages from ArchiveBot
 │   ├── sessions          # login credentials for local whatupcore devices to WhatsApp
 │   ├── static            # static assets (keys should live here)
-│   └── whatupcore2       # state for WhatUpCore2 (encrypted)
 ├── docker-compose.yml    # docker-compose for local deploys
 ├── protos                # protocol spec for communications layer
 │   ├── Makefile          # makefile to generate project-specific protocol files
@@ -77,7 +76,7 @@ Inside each project you (should) find a README going into more detail on that su
 
 The two main projects are `whatupcore2` and `whatupy` and they communicate using the protocol spec in the [protos](protos/) directory.
 
-*whatupcore* is responsible for connecting to WhatsApp Web on behalf of our devices and exposing a friendly and unified view of that API to our bots defined in whatupy. In order to simplify connecting to WhatsApp, whatupcore maintains the encrytped state of each device in it's own set of sqlite databases (in [data/whatupcore2/db](data/whatupcore2/db/), encrypted with sqlcypher) that get decrypted with device-specific passphrases. For dev, these credentials are stored in [data/sessions](data/sessions/) and contain JSON blobs of the form,
+*whatupcore* is responsible for connecting to WhatsApp Web on behalf of our devices and exposing a friendly and unified view of that API to our bots defined in whatupy. In order to simplify connecting to WhatsApp, whatupcore maintains the encrytped connection state of each device in postgres (managed by [encsqlstore](https://github.com/digital-witness-lab/whatup/tree/main/whatupcore2/pkg/encsqlstore)) that get decrypted with device-specific passphrases. For dev, these credentials are stored in [data/sessions](data/sessions/) and contain JSON blobs of the form,
 
 ```JSON
 {
