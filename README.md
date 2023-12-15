@@ -46,3 +46,4 @@
       * [Displaying charts](./200-building-colab-notebooks.md#displaying-charts)
       * [Allowing users to download data](./200-building-colab-notebooks.md#allowing-users-to-download-data)
       * [Allowing users to copy text to the clipboard](./200-building-colab-notebooks.md#allowing-users-to-copy-text-to-the-clipboard)
+* [Rebuilding the database](./checklists/rebuild-database.md#rebuilding-the-database)

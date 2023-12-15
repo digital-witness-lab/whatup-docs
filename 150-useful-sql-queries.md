@@ -10,7 +10,7 @@
    * [Groups contributed by user](./150-useful-sql-queries.md#groups-contributed-by-user)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Wed Dec 13 10:39:05 UTC 2023 -->
+<!-- Added by: runner, at: Fri Dec 15 09:50:42 UTC 2023 -->
 
 <!--te-->
 
