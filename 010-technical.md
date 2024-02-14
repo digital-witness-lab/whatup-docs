@@ -1,6 +1,6 @@
-# WHATUP TECHNICAL DOCS
+# WhatUp Technical Docs
 
-> This document is to get a general sense of how the whatup project code is laid out and how to get started developing
+> This document is to get a general sense of how the whatup project code is laid out and how to get started developing. It is focused on the [WhatUp Monorepo](https://github.com/digital-witness-lab/whatup)
 
 
 <!--ts-->
