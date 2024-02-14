@@ -4,7 +4,7 @@
 
 
 <!--ts-->
-* [WHATUP TECHNICAL DOCS](./010-technical.md#whatup-technical-docs)
+* [WhatUp Technical Docs](./010-technical.md#whatup-technical-docs)
    * [What this doc is and what it isn't](./010-technical.md#what-this-doc-is-and-what-it-isnt)
    * [Repo Contents](./010-technical.md#repo-contents)
       * [Architecture Philosophy](./010-technical.md#architecture-philosophy)
@@ -19,7 +19,7 @@
          * [Celebrate 🎊](./010-technical.md#celebrate-)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Fri Dec 15 12:58:57 UTC 2023 -->
+<!-- Added by: runner, at: Wed Feb 14 13:59:27 UTC 2024 -->
 
 <!--te-->
 
