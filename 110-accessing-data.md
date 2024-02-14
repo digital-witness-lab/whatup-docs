@@ -4,21 +4,22 @@
 
 
 <!--ts-->
-* [Accessing WhatUp Data](#accessing-whatup-data)
-   * [Ways to see WhatUp Data](#ways-to-see-whatup-data)
-   * [Ways to access data](#ways-to-access-data)
-      * [WebUI with BigQuery](#webui-with-bigquery)
-      * [WebUI with Colab](#webui-with-colab)
-      * [WebUI with Looker or Sheets](#webui-with-looker-or-sheets)
-         * [Method 1](#method-1)
-         * [Method 2](#method-2)
-         * [Method 3 (only Sheets)](#method-3-only-sheets)
-   * [Ways of accessing third party data in BigQuery](#ways-of-accessing-third-party-data-in-bigquery)
-      * [Sheets Source](#sheets-source)
-   * [Getting Started with SQL](#getting-started-with-sql)
-      * [Selecting 1000 Messages](#selecting-1000-messages)
-      * [Joining Messages and Group Info](#joining-messages-and-group-info)
-      * [Filtering Messages by Keywords in Second Table](#filtering-messages-by-keywords-in-second-table)
+* [Accessing WhatUp Data](./110-accessing-data.md#accessing-whatup-data)
+   * [Ways to see WhatUp Data](./110-accessing-data.md#ways-to-see-whatup-data)
+   * [Ways to access data](./110-accessing-data.md#ways-to-access-data)
+      * [WebUI with BigQuery](./110-accessing-data.md#webui-with-bigquery)
+      * [WebUI with Colab](./110-accessing-data.md#webui-with-colab)
+      * [WebUI with Looker or Sheets](./110-accessing-data.md#webui-with-looker-or-sheets)
+         * [Method 1](./110-accessing-data.md#method-1)
+         * [Method 2](./110-accessing-data.md#method-2)
+         * [Method 3 (only Sheets)](./110-accessing-data.md#method-3-only-sheets)
+      * [Python](./110-accessing-data.md#python)
+   * [Ways of accessing third party data in BigQuery](./110-accessing-data.md#ways-of-accessing-third-party-data-in-bigquery)
+      * [Sheets Source](./110-accessing-data.md#sheets-source)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: runner, at: Fri Dec 15 12:58:57 UTC 2023 -->
+
 <!--te-->
 
 
@@ -156,7 +157,7 @@ There is also a method to use Google sheets as a data-source that is accessible 
 7. Give the new table an informative name in the "Table" field. Ideally, this will also be the same name as the Google Sheet
 8. Click Create Table
 
-You should now see the new table in the "static_data" dataset! An example of joining to this data can be seen [here](#filtering-messages-by-keywords-in-second-table)
+You should now see the new table in the "static_data" dataset! An example of joining to this data can be seen [here](150-useful-sql-queries.md#filtering-messages-by-keywords-in-second-table)
 
 ![](images/webui-add-data-source.png)
 

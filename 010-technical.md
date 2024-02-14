@@ -4,19 +4,23 @@
 
 
 <!--ts-->
-* [WHATUP TECHNICAL DOCS](#whatup-technical-docs)
-   * [What this doc is and what it isn't](#what-this-doc-is-and-what-it-isnt)
-   * [Repo Contents](#repo-contents)
-      * [Architecture Philosophy](#architecture-philosophy)
-      * [File tree overview](#file-tree-overview)
-      * [How Services Connect](#how-services-connect)
-   * [Setup](#setup)
-      * [Local Development Environment](#local-development-environment)
-         * [Decrypting](#decrypting)
-         * [Core Services](#core-services)
-         * [On-Boarding a device](#on-boarding-a-device)
-         * [Launching Bots](#launching-bots)
-         * [Celebrate 🎊](#celebrate-)
+* [WHATUP TECHNICAL DOCS](./010-technical.md#whatup-technical-docs)
+   * [What this doc is and what it isn't](./010-technical.md#what-this-doc-is-and-what-it-isnt)
+   * [Repo Contents](./010-technical.md#repo-contents)
+      * [Architecture Philosophy](./010-technical.md#architecture-philosophy)
+      * [File tree overview](./010-technical.md#file-tree-overview)
+      * [How Services Connect](./010-technical.md#how-services-connect)
+   * [Setup](./010-technical.md#setup)
+      * [Local Development Environment](./010-technical.md#local-development-environment)
+         * [Decrypting](./010-technical.md#decrypting)
+         * [Core Services](./010-technical.md#core-services)
+         * [On-Boarding a device](./010-technical.md#on-boarding-a-device)
+         * [Launching Bots](./010-technical.md#launching-bots)
+         * [Celebrate 🎊](./010-technical.md#celebrate-)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: runner, at: Fri Dec 15 12:58:57 UTC 2023 -->
+
 <!--te-->
 
 
@@ -53,7 +57,6 @@ Finally, we try to keep the actual WhatsApp login credentials quite safe. For th
 │   ├── message-archive   # local archive of messages from ArchiveBot
 │   ├── sessions          # login credentials for local whatupcore devices to WhatsApp
 │   ├── static            # static assets (keys should live here)
-│   └── whatupcore2       # state for WhatUpCore2 (encrypted)
 ├── docker-compose.yml    # docker-compose for local deploys
 ├── protos                # protocol spec for communications layer
 │   ├── Makefile          # makefile to generate project-specific protocol files
@@ -73,7 +76,7 @@ Inside each project you (should) find a README going into more detail on that su
 
 The two main projects are `whatupcore2` and `whatupy` and they communicate using the protocol spec in the [protos](protos/) directory.
 
-*whatupcore* is responsible for connecting to WhatsApp Web on behalf of our devices and exposing a friendly and unified view of that API to our bots defined in whatupy. In order to simplify connecting to WhatsApp, whatupcore maintains the encrytped state of each device in it's own set of sqlite databases (in [data/whatupcore2/db](data/whatupcore2/db/), encrypted with sqlcypher) that get decrypted with device-specific passphrases. For dev, these credentials are stored in [data/sessions](data/sessions/) and contain JSON blobs of the form,
+*whatupcore* is responsible for connecting to WhatsApp Web on behalf of our devices and exposing a friendly and unified view of that API to our bots defined in whatupy. In order to simplify connecting to WhatsApp, whatupcore maintains the encrytped connection state of each device in postgres (managed by [encsqlstore](https://github.com/digital-witness-lab/whatup/tree/main/whatupcore2/pkg/encsqlstore)) that get decrypted with device-specific passphrases. For dev, these credentials are stored in [data/sessions](data/sessions/) and contain JSON blobs of the form,
 
 ```JSON
 {
