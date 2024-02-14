@@ -34,6 +34,21 @@ $ rsync -avh --info=progress2 original workspace
 $ export ANON_KEY=pulumi config get whatupAnonKey --stack prod
 $ ./scripts/redact-message-archive.sh /path/to/workspace/ /path/to/output/
 ```
+- [x] upload redacted data
+```bash
+$ cd /path/to/output/
+$ for i in *; do 
+    gcloud storage rsync -r $i gs://dwl-msgarc-76f5b32/$i;
+done;
+```
+
+- [x] delete old archive data
+```bash
+$ for path in $( cat gsurls.txt) ; do
+    gcloud storage rm --recursive $path
+done
+```
+
 - [ ] delete affected groups using databasebot-delete-groups job
     - When running the job, set the `WHATUPY_DELETE_GROUPS` envvar to the output of the following:
 ```bash
@@ -41,19 +56,6 @@ $ for path in $( cat gsurls.txt) ; do
     group=$( basename $path )
     echo -n "$group ";
 done; echo
-```
-
-- [ ] upload redacted data
-```bash
-$ cd /path/to/output/
-$ gcloud storage rsync . gs://dwl-msgarc-76f5b32
-```
-
-- [ ] delete old archive data
-```bash
-$ for path in $( cat gsurls.txt) ; do
-    gcloud storage rm $path
-done
 ```
 
 - [ ] run load archive
