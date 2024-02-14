@@ -1,7 +1,7 @@
 # WHATUP DOCUMENTATION
 
 
-* [WHATUP TECHNICAL DOCS](./010-technical.md#whatup-technical-docs)
+* [WhatUp Technical Docs](./010-technical.md#whatup-technical-docs)
    * [What this doc is and what it isn't](./010-technical.md#what-this-doc-is-and-what-it-isnt)
    * [Repo Contents](./010-technical.md#repo-contents)
       * [Architecture Philosophy](./010-technical.md#architecture-philosophy)
