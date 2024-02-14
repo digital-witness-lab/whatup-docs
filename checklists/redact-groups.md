@@ -1,36 +1,35 @@
-
+NOTE: this is easier to do in a GCS VM. Make sure to enable access to all google APIs when creating the VM
     
-- [ ] create list of gs-urls to affected groups
+- [X] create list of gs-urls to affected groups
     - ie: `gcloud storage ls gs://dwl-msgarc-76f5b32 | grep -E '/[0-9]+-[0-9]+@g.us' > gsurls.txt`
-- [ ] copy affected data
+- [X] copy affected data
 ```bash
 for path in $( cat gsurls.txt ); do
     group=$( basename $path )
-    gcloud storage rsync $path origina-data/$group
+    gcloud storage rsync -r $path original/$group
 done
 ```
-
-- [ ] distable whatupcore2 and all bot services
-- [ ] copy affected data
-```bash
-for path in $( cat gsurls.txt ); do
-    group=$( basename $path )
-    gcloud storage rsync $path original-data/$group
-done
-```
-
-- [ ] backup affected data
-```bash
-$ cp -r original-data workspace
-```
-
-- [ ] pulumi refresh && pulumi up
+- [x] pulumi refresh && pulumi up
 ```bash
 $ pulumi refresh --stack prod
 $ pulumi up --stack prod
 ```
 
-- [ ] run redact script
+
+- [x] copy affected data
+```bash
+for path in $( cat gsurls.txt ); do
+    group=$( basename $path )
+    gcloud storage rsync -r $path original/$group
+done
+```
+
+- [x] backup affected data
+```bash
+$ rsync -avh --info=progress2 original workspace
+```
+
+- [x] run redact script
 ```bash
 $ export ANON_KEY=pulumi config get whatupAnonKey --stack prod
 $ ./scripts/redact-message-archive.sh /path/to/workspace/ /path/to/output/
