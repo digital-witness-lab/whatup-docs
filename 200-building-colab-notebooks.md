@@ -3,18 +3,21 @@
 The easiest way to prototype analyses and interfaces with Whatup data is via Google Colab notebooks.
 
 <!--ts-->
-   * [Why Google Colab](#why-google-colab)
-   * [Limitations](#limitations)
-   * [Creating a new Colab notebook](#creating-a-new-colab-notebook)
-   * [Sharing notebooks in playground mode](#sharing-notebooks-in-playground-mode)
-   * [Code snippets and guidance](#code-snippets-and-guidance)
-      * [Fetching data from BigQuery](#fetching-data-from-bigquery)
-      * [Fetching data from Google Sheets](#fetching-data-from-google-sheets)
-      * [Accepting user input via widgets](#accepting-user-input-via-widgets)
-      * [Displaying interactive tables](#displaying-interactive-tables)
-      * [Displaying charts](#displaying-charts)
-      * [Allowing users to download data](#allowing-users-to-download-data)
-      * [Allowing users to copy text to the clipboard](#allowing-users-to-copy-text-to-the-clipboard)
+## Table of Contents
+
+- [Building Colab Notebooks](#building-colab-notebooks)
+  - [Why Google Colab](#why-google-colab)
+  - [Limitations](#limitations)
+  - [Creating a new Colab notebook](#creating-a-new-colab-notebook)
+  - [Sharing notebooks in playground mode](#sharing-notebooks-in-playground-mode)
+  - [Code snippets and guidance](#code-snippets-and-guidance)
+    - [Fetching data from BigQuery](#fetching-data-from-bigquery)
+    - [Fetching data from Google Sheets](#fetching-data-from-google-sheets)
+    - [Accepting user input via widgets](#accepting-user-input-via-widgets)
+    - [Displaying interactive tables](#displaying-interactive-tables)
+    - [Displaying charts](#displaying-charts)
+    - [Allowing users to download data](#allowing-users-to-download-data)
+    - [Allowing users to copy text to the clipboard](#allowing-users-to-copy-text-to-the-clipboard)
 <!--te-->
 
 ## Why Google Colab

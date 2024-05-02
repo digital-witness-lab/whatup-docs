@@ -5,16 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: |
-          curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/0.9.1/gh-md-toc -o gh-md-toc
-          chmod a+x gh-md-toc
+          apt install gawk -y
           echo "Creating per file TOC"
-          find . -name \*.md -exec ./gh-md-toc --insert --no-backup --hide-footer --skip-header {} \;
+          find . -name \*.md -exec bash -c "cat {} | ./gh-md-toc {}" \;
           echo "Creating README TOC"
-          ./gen-readme.sh
+          find . -maxdepth 1 -name \*.md -not -name README.md | sort -n | xargs cat | ./gh-md-toc README.md
           echo "Cleaning up"
           rm gh-md-toc
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update Table of Contents

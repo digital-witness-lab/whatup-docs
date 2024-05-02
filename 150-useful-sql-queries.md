@@ -1,12 +1,15 @@
 # Useful SQL Queries
 
 <!--ts-->
-   * [Selecting 1000 Messages](#selecting-1000-messages)
-   * [Joining Messages and Group Info](#joining-messages-and-group-info)
-   * [Filtering Messages by Keywords in Second Table](#filtering-messages-by-keywords-in-second-table)
-   * [Extract URLs from messages](#extract-urls-from-messages)
-   * [More interesting message](#more-interesting-message)
-   * [Groups contributed by user](#groups-contributed-by-user)
+## Table of Contents
+
+- [Useful SQL Queries](#useful-sql-queries)
+  - [Selecting 1000 Messages](#selecting-1000-messages)
+  - [Joining Messages and Group Info](#joining-messages-and-group-info)
+  - [Filtering Messages by Keywords in Second Table](#filtering-messages-by-keywords-in-second-table)
+  - [Extract URLs from messages](#extract-urls-from-messages)
+  - [More interesting message](#more-interesting-message)
+  - [Groups contributed by user](#groups-contributed-by-user)
 <!--te-->
 
 
