@@ -19,7 +19,11 @@ done;
 - [ ] Deploy `pulumi up --stack $NEW_STACK`
 - [ ] Run `bot-onboard-job` (set `WHATUPY_ONBOARD_BOT_NAME` envvar)
 - [ ] Onboard test device `@RegisterBot register infra-test` + add a couple groups through onboarding process (ref: group GGG)
-- [ ] Send text + media on group GGG
+- [ ] Send test messages on group GGG:
+  - [ ] text
+  - [ ] react to message
+  - [ ] forward message (messages must be written by someone other than the person forwarding it)
+  - [ ] image
 - [ ] Verify media is located in media dwl-media bucket
 - [ ] Verify data is in postgres DB using BigQuery external connection
 - [ ] Run `bq-init-schema-messages-job` and `bq-init-schema-users-job` jobs
