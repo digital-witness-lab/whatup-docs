@@ -17,9 +17,27 @@ done;
   - [ ] Select a name for the `primary_bot_name`
 - [ ] (Optional) Add corresponding auth helper target into "infrastructure/Makefile"
 - [ ] Deploy `pulumi up --stack $NEW_STACK`
+- [ ] Run `bot-onboard-job` (set `WHATUPY_ONBOARD_BOT_NAME` envvar)
+- [ ] Onboard test device `@RegisterBot register infra-test` + add a couple groups through onboarding process (ref: group GGG)
+- [ ] Send text + media on group GGG
+- [ ] Verify media is located in media dwl-media bucket
+- [ ] Verify data is in postgres DB using BigQuery external connection
+- [ ] Run `bq-init-schema-messages-job` and `bq-init-schema-users-job` jobs
+- [ ] Set schedule for `hash-gen-job`
+- [ ] Manually run BigQuery scheduled queries
+- [ ] Verify BigQuery data is filled
+- [ ] Unregister `infra-test` device
 
-TODO:
-- create control group, modify config, add bot to it
-- onboard new bot using job, re-deploy
-- register first user with data
-- run schema init job
+Optional:
+- [ ] Create `data-editors` group with permissions:
+  - [ ] roles/bigquery.dataEditor
+  - [ ] roles/bigquery.jobUser
+  - [ ] roles/looker.instanceUser
+  - [ ] roles/looker.viewer
+  - [ ] roles/storage.objectViewer
+- [ ] Create `data-viewers` group with permissions:
+  - [ ] roles/bigquery.dataViewer
+  - [ ] roles/bigquery.jobUser
+  - [ ] roles/bigquery.user
+  - [ ] roles/looker.viewer
+  - [ ] roles/storage.objectViewer WITH CONDITION `resource.name == 'projects/_/buckets/{media_bucket.name}'`
