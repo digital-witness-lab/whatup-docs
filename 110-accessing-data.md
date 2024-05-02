@@ -4,22 +4,17 @@
 
 
 <!--ts-->
-* [Accessing WhatUp Data](./110-accessing-data.md#accessing-whatup-data)
-   * [Ways to see WhatUp Data](./110-accessing-data.md#ways-to-see-whatup-data)
-   * [Ways to access data](./110-accessing-data.md#ways-to-access-data)
-      * [WebUI with BigQuery](./110-accessing-data.md#webui-with-bigquery)
-      * [WebUI with Colab](./110-accessing-data.md#webui-with-colab)
-      * [WebUI with Looker or Sheets](./110-accessing-data.md#webui-with-looker-or-sheets)
-         * [Method 1](./110-accessing-data.md#method-1)
-         * [Method 2](./110-accessing-data.md#method-2)
-         * [Method 3 (only Sheets)](./110-accessing-data.md#method-3-only-sheets)
-      * [Python](./110-accessing-data.md#python)
-   * [Ways of accessing third party data in BigQuery](./110-accessing-data.md#ways-of-accessing-third-party-data-in-bigquery)
-      * [Sheets Source](./110-accessing-data.md#sheets-source)
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Wed Feb 14 22:06:14 UTC 2024 -->
-
+   * [Ways to see WhatUp Data](#ways-to-see-whatup-data)
+   * [Ways to access data](#ways-to-access-data)
+      * [WebUI with BigQuery](#webui-with-bigquery)
+      * [WebUI with Colab](#webui-with-colab)
+      * [WebUI with Looker or Sheets](#webui-with-looker-or-sheets)
+         * [Method 1](#method-1)
+         * [Method 2](#method-2)
+         * [Method 3 (only Sheets)](#method-3-only-sheets)
+      * [Python](#python)
+   * [Ways of accessing third party data in BigQuery](#ways-of-accessing-third-party-data-in-bigquery)
+      * [Sheets Source](#sheets-source)
 <!--te-->
 
 

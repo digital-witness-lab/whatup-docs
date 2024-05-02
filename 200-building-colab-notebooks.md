@@ -3,23 +3,18 @@
 The easiest way to prototype analyses and interfaces with Whatup data is via Google Colab notebooks.
 
 <!--ts-->
-* [Building Colab Notebooks](./200-building-colab-notebooks.md#building-colab-notebooks)
-   * [Why Google Colab](./200-building-colab-notebooks.md#why-google-colab)
-   * [Limitations](./200-building-colab-notebooks.md#limitations)
-   * [Creating a new Colab notebook](./200-building-colab-notebooks.md#creating-a-new-colab-notebook)
-   * [Sharing notebooks in playground mode](./200-building-colab-notebooks.md#sharing-notebooks-in-playground-mode)
-   * [Code snippets and guidance](./200-building-colab-notebooks.md#code-snippets-and-guidance)
-      * [Fetching data from BigQuery](./200-building-colab-notebooks.md#fetching-data-from-bigquery)
-      * [Fetching data from Google Sheets](./200-building-colab-notebooks.md#fetching-data-from-google-sheets)
-      * [Accepting user input via widgets](./200-building-colab-notebooks.md#accepting-user-input-via-widgets)
-      * [Displaying interactive tables](./200-building-colab-notebooks.md#displaying-interactive-tables)
-      * [Displaying charts](./200-building-colab-notebooks.md#displaying-charts)
-      * [Allowing users to download data](./200-building-colab-notebooks.md#allowing-users-to-download-data)
-      * [Allowing users to copy text to the clipboard](./200-building-colab-notebooks.md#allowing-users-to-copy-text-to-the-clipboard)
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Wed Feb 14 22:06:15 UTC 2024 -->
-
+   * [Why Google Colab](#why-google-colab)
+   * [Limitations](#limitations)
+   * [Creating a new Colab notebook](#creating-a-new-colab-notebook)
+   * [Sharing notebooks in playground mode](#sharing-notebooks-in-playground-mode)
+   * [Code snippets and guidance](#code-snippets-and-guidance)
+      * [Fetching data from BigQuery](#fetching-data-from-bigquery)
+      * [Fetching data from Google Sheets](#fetching-data-from-google-sheets)
+      * [Accepting user input via widgets](#accepting-user-input-via-widgets)
+      * [Displaying interactive tables](#displaying-interactive-tables)
+      * [Displaying charts](#displaying-charts)
+      * [Allowing users to download data](#allowing-users-to-download-data)
+      * [Allowing users to copy text to the clipboard](#allowing-users-to-copy-text-to-the-clipboard)
 <!--te-->
 
 ## Why Google Colab

@@ -3,6 +3,9 @@
 > CAUTION: public views are *PUBLIC* and you should ensure that the data being made public is OK for release
 
 <!--ts-->
+   * [The process](#the-process)
+      * [Using the UI](#using-the-ui)
+      * [In the infrastructure](#in-the-infrastructure)
 <!--te-->
 
 ## The process

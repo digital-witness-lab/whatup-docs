@@ -9,8 +9,11 @@ jobs:
       - run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/0.9.1/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
+          echo "Creating per file TOC"
           find . -name \*.md -exec ./gh-md-toc --insert --no-backup --hide-footer --skip-header {} \;
+          echo "Creating README TOC"
           ./gen-readme.sh
+          echo "Cleaning up"
           rm gh-md-toc
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
