@@ -58,11 +58,11 @@ OPTIONS (
   allow_non_incremental_definition = true)
 AS (
   SELECT t.*, max_ts.first_seen
-  FROM `whatup-deploy.messages_test.device_group_info` AS t
+  FROM `<UPDATE_LOCATION>.device_group_info` AS t
   JOIN (
     SELECT JID, MAX(last_seen) AS max_last_seen,
     min(timestamp) AS first_seen
-    FROM `whatup-deploy.messages_test.device_group_info`
+    FROM `<UPDATE_LOCATION>.device_group_info`
     GROUP BY JID
   ) AS max_ts
   ON t.JID = max_ts.JID
