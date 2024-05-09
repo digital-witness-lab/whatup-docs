@@ -4,9 +4,8 @@
 
 
 <!--ts-->
-## Table of Contents
-
 - [WhatUp Technical Docs](#whatup-technical-docs)
+  - [Table of Contents](#table-of-contents)
   - [What this doc is and what it isn't](#what-this-doc-is-and-what-it-isnt)
   - [Repo Contents](#repo-contents)
     - [Architecture Philosophy](#architecture-philosophy)

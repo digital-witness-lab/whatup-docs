@@ -1,9 +1,8 @@
 # Useful SQL Queries
 
 <!--ts-->
-## Table of Contents
-
 - [Useful SQL Queries](#useful-sql-queries)
+  - [Table of Contents](#table-of-contents)
   - [Selecting 1000 Messages](#selecting-1000-messages)
   - [Joining Messages and Group Info](#joining-messages-and-group-info)
   - [Filtering Messages by Keywords in Second Table](#filtering-messages-by-keywords-in-second-table)

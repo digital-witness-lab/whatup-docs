@@ -4,9 +4,8 @@
 
 
 <!--ts-->
-## Table of Contents
-
 - [Accessing WhatUp Data](#accessing-whatup-data)
+  - [Table of Contents](#table-of-contents)
   - [Ways to see WhatUp Data](#ways-to-see-whatup-data)
   - [Ways to access data](#ways-to-access-data)
     - [WebUI with BigQuery](#webui-with-bigquery)

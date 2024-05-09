@@ -3,9 +3,8 @@
 > CAUTION: public views are *PUBLIC* and you should ensure that the data being made public is OK for release
 
 <!--ts-->
-## Table of Contents
-
 - [Creating a public view for data](#creating-a-public-view-for-data)
+  - [Table of Contents](#table-of-contents)
   - [The process](#the-process)
     - [Using the UI](#using-the-ui)
     - [In the infrastructure](#in-the-infrastructure)

@@ -3,9 +3,8 @@
 The easiest way to prototype analyses and interfaces with Whatup data is via Google Colab notebooks.
 
 <!--ts-->
-## Table of Contents
-
 - [Building Colab Notebooks](#building-colab-notebooks)
+  - [Table of Contents](#table-of-contents)
   - [Why Google Colab](#why-google-colab)
   - [Limitations](#limitations)
   - [Creating a new Colab notebook](#creating-a-new-colab-notebook)
