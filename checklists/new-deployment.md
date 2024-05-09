@@ -45,3 +45,29 @@ Optional:
   - [ ] roles/bigquery.user
   - [ ] roles/looker.viewer
   - [ ] roles/storage.objectViewer WITH CONDITION `resource.name == 'projects/_/buckets/{media_bucket.name}'`
+- [ ] Create `group_info_canonical` table using the SQL below
+
+## `group_info_canonical` table
+
+```sql
+CREATE MATERIALIZED VIEW `<UPDATE_LOCATION>.group_info_canonical`
+OPTIONS (
+  enable_refresh = true,
+  refresh_interval_minutes = 10,
+  max_staleness = INTERVAL "6" HOUR,
+  allow_non_incremental_definition = true)
+AS (
+  SELECT t.*, max_ts.first_seen
+  FROM `whatup-deploy.messages_test.device_group_info` AS t
+  JOIN (
+    SELECT JID, MAX(last_seen) AS max_last_seen,
+    min(timestamp) AS first_seen
+    FROM `whatup-deploy.messages_test.device_group_info`
+    GROUP BY JID
+  ) AS max_ts
+  ON t.JID = max_ts.JID
+  WHERE 
+    (t.last_seen >= DATETIME_SUB(max_ts.max_last_seen, INTERVAL 24 HOUR) AND t.isPartialInfo = FALSE)
+    OR t.last_seen = max_ts.max_last_seen
+)
+```
