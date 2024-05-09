@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          apt install gawk -y
+          sudo apt install gawk -y
           echo "Creating per file TOC"
           find . -name \*.md -exec bash -c "cat {} | ./gh-md-toc {}" \;
           echo "Creating README TOC"
