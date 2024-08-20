@@ -44,7 +44,7 @@ Optional:
   - [ ] roles/bigquery.jobUser
   - [ ] roles/bigquery.user
   - [ ] roles/looker.viewer
-  - [ ] roles/storage.objectViewer WITH CONDITION `resource.name == 'projects/_/buckets/{media_bucket.name}'`
+  - [ ] roles/storage.objectViewer WITH CONDITION `resource.name.startsWith("{media_bucket.name}")`
 - [ ] Create `group_info_canonical` table using the SQL below
 
 ## `group_info_canonical` table
