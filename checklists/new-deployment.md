@@ -6,7 +6,7 @@ This checklist assumes you have set the new stack name as envvar NEW_STACK using
 - [ ] Create the new stack and initialize the config: `pulumi stack init $NEW_STACK --copy-config-from mynameisfiber/prod`
 - [ ] Create new salts and passwords for the stack:
 ```bash
-for key in dbRootPassword msgPassword usrPassword whatupAnonKey whatupSalt wucPassword dataApiJWT;
+for key in dbRootPassword msgPassword usrPassword whatupAnonKey whatupSalt wucPassword ;
 do
   openssl rand -hex 64 | pulumi config set --stack $NEW_STACK --secret $key
 done;
